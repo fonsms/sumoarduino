@@ -10,10 +10,6 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-  for(int i=0; i<8; i++){
-    leds.colorselec(i);
-    delay(1000);
-    
-  }
+    //leds.colorselec('P');
+    leds.alarma();
 }
