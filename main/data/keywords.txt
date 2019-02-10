@@ -1,4 +1,2 @@
-//keywords.txt
 DriverLed KEYWORD1 
 colorselec KEYWORD2 
-funcion1 KEYWORD2
