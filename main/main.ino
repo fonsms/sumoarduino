@@ -7,6 +7,12 @@
 #define LED_R  9
 #define LED_G  10
 #define LED_B  11
+// pins del puente H y motores
+#define M_ENABLE 8
+#define M_LEFT1 5
+#define M_LEFT2 4
+#define M_RIGHT1 6
+#define M_RIGHT2 7
 
 
 
@@ -20,5 +26,6 @@ void setup() {
 void loop() {
     //leds.colorselec('P');
    // leds.alarma();
-prox.getdistancia();
+prox.getdistancia(); 
+
 }
