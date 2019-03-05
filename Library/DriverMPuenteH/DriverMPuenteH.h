@@ -5,7 +5,11 @@ class DriverMPuenteH
 {
 public:
 	DriverMPuenteH(int M_ENABLE , int M_LEFT1,int M_LEFT2, int M_RIGHT1,int M_RIGHT2);// constructor
-	long getdistancia();
+	void goright();
+	void activamotor();
+	void goback();
+	void atack();
+	void recognition();
 	
 private:
 	int _M_ENABLE;

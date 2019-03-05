@@ -1,5 +1,6 @@
 #include <DriverLed.h>
 #include <DriverProxSensor.h>
+#include <DriverMPuenteH.h>
 //pins del sensor ultrasonido
 #define Pin_echo  2
 #define Pin_trig  12
@@ -17,7 +18,8 @@
 
 
 DriverLed leds (LED_R,LED_G,LED_B);
-DriverProxSensor prox(Pin_echo, Pin_trig);
+DriverProxSensor prox (Pin_echo, Pin_trig);
+DriverMPuenteH motor (M_ENABLE, M_LEFT1,M_LEFT2,M_RIGHT1,M_RIGHT2);
 
 void setup() {
  Serial.begin(9600);
@@ -26,6 +28,12 @@ void setup() {
 void loop() {
     //leds.colorselec('P');
    // leds.alarma();
-prox.getdistancia(); 
+//prox.getdistancia();
+motor.goright();
+delay(1000);
+motor.goback();
+delay(1000);
+motor.recognition();
+delay(1000);
 
 }
